@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>SIGN UP - 前菜 ZENSAI - Asian Food</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="stylesheets.css">
+    </head>
+    <body class="fondo-body-reg">
+        <div class="register-container">    
+            <header>
+                <!-- Barra de Navegación -->
+                <nav class="navbar">
+
+                    <div class="nav-container">
+                        <!-- Logo Circular -->
+                    <div class="logo">
+                        <a href="index.html"><img src="ZensaiLogoWeb@300x.png" alt="Zensai-Logo"></a>
+                    </div>
+
+                        <!-- Parte 1: Inicio, Contacto, Nosotros -->
+                        <div class="nav-part web-info">
+                            <a href="index.html" class="nav-link" target="_blank">Inicio</a>
+                            <a href="contacto.html" class="nav-link" target="_blank">Contacto</a>
+                            <a href="nosotros.html" class="nav-link" target="_blank">Nosotros</a>
+                        </div>
+
+                    <!-- Parte 2: Login, Sign Up, Carrito -->
+                    <div class="nav-part registro">
+                        <a href="login.html" class="nav-link" target="_blank">Login</a>
+                        <a href="register.html" class="nav-link" target="_blank">Sign Up</a>
+                        <a href="carrito.html" class="nav-link" target="_blank"><img src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FFFFFF" alt="Carrito" class="carrito-ico"></a>
+                    </div>
+
+                    <!-- Menú hamburguesa para móviles -->
+                    <div class="menu-toggle">&#9776;</div>
+                </nav>
+            </header>
+            
+            <main class="register-main">
+                <div class="container-reg">
+                    <form action="register.html" method="POST" class="form-register">
+                                <h2>Registrate y enterate de las últimas novedades en Zensai </h2>
+                            
+                                <label class="register-label" for="username">Usuario</label>
+                                <input type="text" id="username" name="username" required placeholder="Ingresa tu nombre de usuario">
+                                
+                                <label class="register-label" for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+                                
+                                <label class="register-label" for="password">Contraseña</label>
+                                <input type="password" id="password" name="password" required placeholder="Ingresa tu contraseña">
+                                
+                                <label class="register-label" for="confirm-password">Confirmar Contraseña</label>
+                                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirma tu contraseña">
+                                
+                                <label class="register-label">
+                                    <input type="checkbox" name="terms" required> Acepto los <a class="a-form" href="#">términos y condiciones</a>
+                                </label>
+                            
+                                <button type="submit" class="submit-btn">Registrarse</button>
+                
+                                <p class="p-form">¿Ya tienes una cuenta? <a class="a-form" href="login.html">Inicia sesión aquí</a></p>
+                    </form>
+                </div>
+            </main>
+            
+            <footer>
+                <div class="rrss-icons">
+                    <a href="https://wa.me/543704298140" target="_blank">
+                        <img class="wpp" src="https://img.icons8.com/?size=100&id=16712&format=png&color=FFFFFF" alt="WhatsApp" />
+                    </a>
+                    
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="ig" src="https://img.icons8.com/?size=100&id=32292&format=png&color=FFFFFF" alt="Instagram" />
+                    </a>
+                    
+                    <a href="mailto:luluprintok@gmail.com" target="_blank">
+                        <img class="mail" src="https://img.icons8.com/?size=100&id=1669&format=png&color=FFFFFF" alt="Email: luluprintok@gmail.com" />
+                    </a>
+                    
+                </div>
+
+                <div class="impulsor ir-arriba">^</div>
+
+                <div class="payment-methods">
+                    <div class="payment-item">
+                        <i class="fas fa-money-check-alt" style="color: #00b3ff;"></i>
+                        <span>Mercado Pago</span>
+                    </div>
+                    <div class="payment-item">
+                        <i class="fas fa-credit-card" style="color: #0066ff;"></i>
+                        <span>Ualá</span>
+                    </div>
+                    <div class="payment-item">
+                        <i class="fab fa-paypal" style="color: rgb(235, 227, 227);"></i>
+                        <span>PayPal</span>
+                    </div>
+                </div>
+                                    
+                <div class="LEGALESyFIRMA">
+                    <div class="TyC">
+                        <img class="tyc-img" src="https://img.icons8.com/?size=100&id=6552&format=png&color=FFFFFF" alt="Términos y Condiciones" target="_blank">
+                        <a class="tyc-link" href="tyc.html" target="_blank">T&C</a>
+                    </div>
+                    <div class="LULUPRINT">
+                        <p class="firma">&copy Lulú Print</p>
+                        <p class="WebDesign">WebDesign</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script src="pageup.js"></script>
+    </body>
+</html>

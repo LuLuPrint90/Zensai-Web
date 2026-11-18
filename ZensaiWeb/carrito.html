@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>CARRITO DE COMPRAS - 前菜 ZENSAI - Asian Food</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="stylesheets.css">
+    </head>
+    
+    <body class="fondo-carrito">
+        <div class="PageContainer">    
+            <header>
+                <!-- Barra de Navegación -->
+                <nav class="navbar">
+
+                    <div class="nav-container">
+                        <!-- Logo Circular -->
+                    <div class="logo">
+                        <a href="index.html"><img src="ZensaiLogoWeb@300x.png" alt="Zensai-Logo"></a>
+                    </div>
+
+                        <!-- Parte 1: Inicio, Contacto, Nosotros -->
+                        <div class="nav-part web-info">
+                            <a href="index.html" class="nav-link" target="_blank">Inicio</a>
+                            <a href="contacto.html" class="nav-link" target="_blank">Contacto</a>
+                            <a href="nosotros.html" class="nav-link" target="_blank">Nosotros</a>
+                        </div>
+
+                    <!-- Parte 2: Login, Sign Up, Carrito -->
+                    <div class="nav-part registro">
+                        <a href="login.html" class="nav-link" target="_blank">Login</a>
+                        <a href="register.html" class="nav-link" target="_blank">Sign Up</a>
+                        <a href="carrito.html" class="nav-link" target="_blank"><img src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FFFFFF" alt="Carrito" class="carrito-ico"></a>
+                    </div>
+
+                    <!-- Menú hamburguesa para móviles -->
+                    <div class="menu-toggle">&#9776;</div>
+                </nav>
+            </header>
+        
+            <main class="main-carrito">
+                <div class="cart-container">
+                    <h3 class="h3-carrito">CARRITO DE COMPRAS</h3>
+                    <br><hr>
+                    <!-- LISTA DE PRODUCTOS AGREGADOS AL CARRITO (TABLA DEL TICKET GENERADO) -->
+
+                    <table id="cart-table" class="tabla-carrito">
+                        <thead>
+                            <tr>
+                                <th class="tabla-producto">Producto</th>
+                                <th class="tabla-precio">Precio</th>
+                                <th class="tabla-cantidad">Cantidad</th>
+                                <th class="tabla-total">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                                <!-- Los productos se agregarán aquí dinámicamente -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="total-price" id="total-gral">Total a Pagar:</td>
+                                <td class="total-price" id="cart-total">$0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    
+                    <div class="botones-carrito">
+                        <br>
+                        <p id="mensaje-vacio" style="display: none;">El carrito está vacío</p>
+                        <br>
+                        <button id="clear-cart" class="clear-cart-btn">Limpiar Carrito</button><br>
+                        <button><a class="volver-al-inicio" href="postres.html">Volver al Inicio</a></button>
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+            <script src="scripts.js"></script>
+            <script src="https://code.jquery.com/jquery-latest.js"></script>
+            <script src="pageup.js"></script>
+            <script>
+                // Función para cargar el carrito desde localStorage y renderizarlo en la tabla
+function loadCart() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartItemsContainer = document.getElementById("cart-items");
+    const cartTotalElement = document.getElementById("cart-total");
+    const mensajeVacio = document.getElementById("mensaje-vacio");
+
+    // Limpiar contenido anterior
+    cartItemsContainer.innerHTML = "";
+
+    if (cart.length === 0) {
+        mensajeVacio.style.display = "block"; // Mostrar mensaje de carrito vacío
+        cartTotalElement.textContent = "$0"; // Reiniciar total
+        return;
+    } else {
+        mensajeVacio.style.display = "none"; // Ocultar mensaje de carrito vacío
+    }
+
+    // Inicializar el total general
+    let total = 0;
+
+    // Recorrer cada producto en el carrito y crear una fila en la tabla
+    cart.forEach(product => {
+        const price = parseFloat(product.price.replace(",", ""));
+        const quantity = product.quantity || 1; // Asegúrate de que la cantidad no sea undefined
+        const productTotal = price * quantity;
+
+        total += productTotal;
+
+        // Crear una nueva fila para el producto
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td>${product.name}</td>
+            <td>$${product.price}</td>
+            <td>${quantity}</td>
+            <td>$${productTotal.toLocaleString()}</td>
+        `;
+        cartItemsContainer.appendChild(row);
+    });
+
+    // Actualizar el total general
+    cartTotalElement.textContent = `$${total.toLocaleString()}`;
+}
+
+// Función para limpiar todo el carrito
+document.getElementById("clear-cart").addEventListener("click", function() {
+    const cartItemsContainer = document.getElementById("cart-items");
+    cartItemsContainer.innerHTML = ""; // Vaciar visualmente el carrito
+    localStorage.removeItem("cart"); // Eliminar los datos del carrito en localStorage
+    document.getElementById("cart-total").textContent = "$0"; // Reiniciar total
+    document.getElementById("mensaje-vacio").style.display = "block"; // Mostrar mensaje de carrito vacío
+    alert("El carrito ha sido limpiado.");
+});
+
+// Cargar el carrito al cargar la página
+document.addEventListener("DOMContentLoaded", loadCart);
+
+            </script>
+
+        </body>
+
+
+    <footer>
+            <div class="rrss-icons">
+                <a href="https://wa.me/543704298140" target="_blank">
+                    <img class="wpp" src="https://img.icons8.com/?size=100&id=16712&format=png&color=FFFFFF" alt="WhatsApp" />
+                </a>
+                
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img class="ig" src="https://img.icons8.com/?size=100&id=32292&format=png&color=FFFFFF" alt="Instagram" />
+                </a>
+                
+                <a href="mailto:luluprintok@gmail.com" target="_blank">
+                    <img class="mail" src="https://img.icons8.com/?size=100&id=1669&format=png&color=FFFFFF" alt="Email: luluprintok@gmail.com" />
+                </a>
+                
+            </div>
+
+            <div class="impulsor ir-arriba">^</div>
+
+            <div class="payment-methods">
+                <div class="payment-item">
+                    <i class="fas fa-money-check-alt" style="color: #00b3ff;"></i>
+                    <span>Mercado Pago</span>
+                </div>
+                <div class="payment-item">
+                    <i class="fas fa-credit-card" style="color: #0066ff;"></i>
+                    <span>Ualá</span>
+                </div>
+                <div class="payment-item">
+                    <i class="fab fa-paypal" style="color: rgb(235, 227, 227);"></i>
+                    <span>PayPal</span>
+                </div>
+            </div>
+                                
+            <div class="LEGALESyFIRMA">
+                <div class="TyC">
+                    <img class="tyc-img" src="https://img.icons8.com/?size=100&id=6552&format=png&color=FFFFFF" alt="Términos y Condiciones" target="_blank">
+                    <a class="tyc-link" href="tyc.html" target="_blank">T&C</a>
+                </div>
+                <div class="LULUPRINT">
+                    <p>&copy Lulú Print</p>
+                    <p class="WebDesign">WebDesign</p>
+                </div>
+            </div>
+    </footer>
+</html>

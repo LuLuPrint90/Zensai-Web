@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>POSTRES - 前菜 ZENSAI - Asian Food</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="stylesheets.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> <!--LINK BOOTSTRAP-->
+    </head>
+    <body class="fondo-postres">
+        <div class="PageContainer">    
+            <header>
+                    <!-- Barra de Navegación -->
+                    <nav class="navbar">
+
+                        <div class="nav-container">
+                            <!-- Logo Circular -->
+                        <div class="logo">
+                            <a href="index.html"><img src="ZensaiLogoWeb@300x.png" alt="Zensai-Logo"></a>
+                        </div>
+
+                            <!-- Parte 1: Inicio, Contacto, Nosotros -->
+                            <div class="nav-part web-info">
+                                <a href="index.html" class="nav-link" target="_blank">Inicio</a>
+                                <a href="contacto.html" class="nav-link" target="_blank">Contacto</a>
+                                <a href="nosotros.html" class="nav-link" target="_blank">Nosotros</a>
+                            </div>
+
+                        <!-- Parte 2: Login, Sign Up, Carrito -->
+                        <div class="nav-part registro">
+                            <a href="login.html" class="nav-link" target="_blank">Login</a>
+                            <a href="register.html" class="nav-link" target="_blank">Sign Up</a>
+                            <a href="carrito.html" class="nav-link" target="_blank"><img src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FFFFFF" alt="Carrito" class="carrito-ico"></a>
+                        </div>
+
+                        <!-- Menú hamburguesa para móviles -->
+                        <div class="menu-toggle">&#9776;</div>
+                    </nav>
+            </header>
+            
+
+            <main class="main-postres">
+                <h2 class="postres-title">POSTRES</h2>
+                <h2 class="sub-title">
+                    <i>Nos complace enseñarte nuestra carta de los más Deliciosos Postres Orientales que tenemos para ti.</i>
+                    <hr class="postres-hr">
+                </h2>
+                <br><br>
+                <div class="product-table">
+                    <table class="tabla-postres">
+                        
+                        <tr class="tabla-postres-tr">
+                                <td class="tabla-postres-td">
+                                    <div class="card"> <!----- TARJETA ----->
+                                        <!-- Imagen del producto -->
+                                        <img class="img-postres" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZdYtFMGNfleqFIVWr_9fzCUyN0rPUydDLjw&s" alt="Producto">
+                                    
+                                        <!-- Descripción del producto -->
+                                        <div class="product-info">
+                                            <h3 class="product-title">ICECREAM MATCHA MOCHI<br>MOCHI DE HELADO DE TÉ VERDE JAPONÉS (3unid.)</h3>
+                                            <p class="product-description">Delicioso y refrescante postre japonés que combina la suavidad 
+                                                del mochi con el exquisito sabor del helado de matcha. Este dulce tradicional se ha modernizado, 
+                                                ofreciendo una experiencia única que deleitará tus sentidos y te transportará a Japón con cada bocado. <br>
+                                                <strong>Características:</strong><br>
+                                                <strong>Sabor Auténtico:</strong>  Elaborados con auténtico matcha de alta calidad, estos mochis ofrecen un sabor intenso y un aroma que evocan la ceremonia del té japonés. <br>
+                                                <strong>Textura Suave:</strong>  La capa exterior de mochi es suave y masticable, creando un contraste perfecto con el cremoso helado en su interior. <br>
+                                                <strong>Porciones Perfectas:</strong>   Cada mochi es del tamaño ideal para disfrutar de un sólo bocado, facilitando su consumo en cualquier momento del día.</p>
+                                            <p class="product-price">$3,800</p>
+                                    
+                                            <!-- Iconos de acción -->
+                                            <div class="product-actions">
+                                                <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                                
+                                                <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                                <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                                
+                                                <img alt="Añadir al Carrito" class="add-to-cart" data-id="1-1" data-name="ICEREAM-MATCHA-MOCHI" data-price="3,800" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                            </div>
+                                    
+                                            <!-- Nota extra -->
+                                            <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas.</i></p>
+                                        </div>
+                                    </div> 
+                                </td>
+                                <td class="tabla-postres-td">
+                                    <div class="card"> <!----- TARJETA ----->
+                                        <!-- Imagen del producto -->
+                                        <img class="img-especias" src="https://images.squarespace-cdn.com/content/v1/5f7b7085a49fc368a5544eae/e29d896b-0bd7-4844-bd35-d2a9237e19d6/5a8e43bb692ad69ff38258d4f5e17ca8+%281%29.jpg?format=100w%20100w,%20https://images.squarespace-cdn.com/content/v1/5f7b7085a49fc368a5544eae/e29d896b-0bd7-4844-bd35-d2a9237e19d6/5a8e43bb692ad69ff38258d4f5e17ca8+%281%29.jpg?format=300w%20300w,%20https://images.squarespace-cdn.com/content/v1/5f7b7085a49fc368a5544eae/e29d896b-0bd7-4844-bd35-d2a9237e19d6/5a8e43bb692ad69ff38258d4f5e17ca8+%281%29.jpg?format=500w%20500w,%20https://images.squarespace-cdn.com/content/v1/5f7b7085a49fc368a5544eae/e29d896b-0bd7-4844-bd35-d2a9237e19d6/5a8e43bb692ad69ff38258d4f5e17ca8+%281%29.jpg?format=750w%20750w,%20https://images.squarespace-cdn.com/content/v1/5f7b7085a49fc368a5544eae/e29d896b-0bd7-4844-bd35-d2a9237e19d6/5a8e43bb692ad69ff38258d4f5e17ca8+%281%29.jpg?format=1000w%201000w,%20https://images.squarespace-cdn.com/content/v1/5f7b7085a49fc368a5544eae/e29d896b-0bd7-4844-bd35-d2a9237e19d6/5a8e43bb692ad69ff38258d4f5e17ca8+%281%29.jpg?format=1500w%201500w,%20https://images.squarespace-cdn.com/content/v1/5f7b7085a49fc368a5544eae/e29d896b-0bd7-4844-bd35-d2a9237e19d6/5a8e43bb692ad69ff38258d4f5e17ca8+%281%29.jpg?format=2500w%202500w" alt="Producto">
+                                    
+                                        <!-- Descripción del producto -->
+                                        <div class="product-info">
+                                            <h3 class="product-title">BINGSU COREANO <br>RASPADO COREANO PERSONALIZABLE (3unid.)</h3>
+                                            <p class="product-description">El Bingsu es un popular postre coreano que se ha convertido en el 
+                                                favorito en todo el mundo. Se trata de un delicioso y refrescante helado de hielo finamente 
+                                                triturado que se sirve con una variedad de ingredientes complementarios, creando una experiencia 
+                                                dulce y satisfactoria que es perfecta para cualquier ocasión, especialmente en días calurosos.
+                                                Se puede personalizar con una amplia gama de sabores y toppings, incluyendo:
+                                                Leche condensada, logrando un toque extra de cremosidad; Frutas frescas (mango, fresas, kiwi y plátano);
+                                                Frijoles rojos y Toppings crujientes (nueces, granola o galletas trituradas).
+                                            </p>
+                                            <p class="product-price">$3,800</p>
+                                    
+                                            <!-- Iconos de acción -->
+                                            <div class="product-actions">
+                                                <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                                
+                                                <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                                <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                                
+                                                <img alt="Añadir al Carrito" class="add-to-cart" data-id="2-1" data-name="BINGSU-COREANO" data-price="3,800" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                            </div>
+                                    
+                                            <!-- Nota extra -->
+                                            <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas.</i></p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="tabla-postres-td">
+                                    <div class="card"> <!----- TARJETA ----->
+                                        <!-- Imagen del producto -->
+                                        <img class="img-postres" src="https://i0.wp.com/sylviawakana.com/wp-content/uploads/2020/03/IchigoDaifuku-2-scaled.jpg?resize=750%2C938&ssl=1" alt="Producto">
+                                    
+                                        <!-- Descripción del producto -->
+                                        <div class="product-info">
+                                            <h3 class="product-title">ICHIGO DAIFUKU<br>MOCHI BLANCO DE FRUTILLA (3unid.)</h3>
+                                            <p class="product-description">Un postre popular japonés de primavera está hecho de mochi masticable y suave relleno de pasta dulce de frijol rojo 
+                                                y cubierto con una jugosa fresa.<br>
+                                                <strong>Características:</strong><br>
+                                                <strong>Suave y Masticable:</strong> Hecho a base de arroz glutinoso, el mochi es tierno y elástico, brindando una experiencia de masticación placentera. <br>
+                                                <strong>Relleno de Pasta de Frijol Rojo:</strong> Cada pieza está rellena con una suave y dulce pasta de frijol rojo (anko), que complementa perfectamente la frescura de la fresa.                                          
+                                                <strong>Fresa Fresca en el Centro:</strong> Una fresa jugosa y fresca se encuentra en el corazón del mochi, añadiendo un toque frutal que equilibra la dulzura del relleno.
+                                            </p>
+                                            <p class="product-price">$5,000</p>
+                                    
+                                            <!-- Iconos de acción -->
+                                            <div class="product-actions">
+                                                <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                                
+                                                <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                                <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                                
+                                                <img alt="Añadir al Carrito" class="add-to-cart" data-id="3-1" data-name="ICHIGO-DAIFUKU" data-price="5,000" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                            </div>
+                                    
+                                            <!-- Nota extra -->
+                                            <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas.</i></p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="tabla-postres-td">
+                                    <div class="card"> <!----- TARJETA ----->
+                                        <!-- Imagen del producto -->
+                                        <img class="img-postres" src="https://preview.redd.it/b2tetq34tow61.jpg?width=1080&crop=smart&auto=webp&s=b4c9042ceb63055c2a19712118e4bd7bde11f523" alt="Producto">
+                                    
+                                        <!-- Descripción del producto -->
+                                        <div class="product-info">
+                                            <h3 class="product-title">PANCAKE TACOS<br>TACOS DE FRUTAS COREANO (3unid.)</h3>
+                                            <p class="product-description">Son una deliciosa fusión de sabores y texturas que 
+                                                reinventan el clásico taco al estilo coreano. Esta innovadora creación combina 
+                                                la suavidad de los pancakes con el relleno sabroso de los tacos, ofreciendo una 
+                                                experiencia culinaria única y sorprendente. Elaborados con una mezcla especial, 
+                                                estos pancakes son ligeros y esponjosos, proporcionando una base perfecta para el relleno.
+                                                Pueden incluir una variedad de frutas que complementan los sabores salados y aportan frescura,
+                                                entre las que se encuentran el plátano, fresas, mango, piña, kiwi, arándanos; todos ellos
+                                                combinados con yogurt o nutella.
+                                            </p>
+                                            <p class="product-price">$6,200</p>
+                                    
+                                            <!-- Iconos de acción -->
+                                            <div class="product-actions">
+                                                <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                                
+                                                <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                                <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                                
+                                                <img alt="Añadir al Carrito" class="add-to-cart" data-id="4-1" data-name="PANCAKE-TACOS" data-price="6,200"  src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                            </div>
+                                    
+                                            <!-- Nota extra -->
+                                            <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas.</i></p>
+                                        </div>
+                                    </div>
+                                </td>
+                        </tr>
+                        
+                        <tr class="tabla-postres-tr">
+                            <td class="tabla-postres-td">
+                                <div class="card"> <!----- TARJETA ----->
+                                    <!-- Imagen del producto -->
+                                    <img class="img-postres" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSgoNqvZxyzsa8MbasTykHosKTJ5sfSX_8Kd9KIYATfWEXjtF7" alt="Producto">
+                                
+                                    <!-- Descripción del producto -->
+                                    <div class="product-info">
+                                        <h3 class="product-title">SAKURA MOCHI<br>PASTEL DE ARROZ ROSADO RELLENO DE PASTA DE JUDÍAS ROJAS CUBIERTO CON UNA HOJA DE ÁRBOL DE CEREZO (3unid.)</h3>
+                                        <p class="product-description">Sabroso postre que se disfruta especialmente durante la primavera. Es conocido por su delicado sabor y su conexión 
+                                            con el festival de flores de cerezo (Hanami). Una combinación equilibrada de dulce y salado, con un sutil aroma a cerezo. De textura suave y masticable 
+                                            por fuera, con un relleno cremoso por dentro.
+                                        </p>
+                                        <p class="product-price">$10,000</p>
+                                
+                                        <!-- Iconos de acción -->
+                                        <div class="product-actions">
+                                            <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                            
+                                            <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                            <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                            
+                                            <img alt="Añadir al Carrito" class="add-to-cart" data-id="1-2" data-name="SAKURAMOCHI" data-price="10,000"  src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                        </div>
+                                
+                                        <!-- Nota extra -->
+                                        <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas.</i></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="tabla-postres-td">
+                                <div class="card"> <!----- TARJETA ----->
+                                    <!-- Imagen del producto -->
+                                    <img class="img-postres" src="https://nihaomarket.es/wp-content/uploads/2023/11/dulce-chino-mooncake-300x300.webp" alt="Producto">
+                                
+                                    <!-- Descripción del producto -->
+                                    <div class="product-info">
+                                        <h3 class="product-title">MOONCAKES<br>PASTEL DE LUNA (3unid.)</h3>
+                                        <p class="product-description">Los pasteles de luna son un dulce tradicional 
+                                            chino que se celebra durante el Festival de la Media Luna. Estos pasteles 
+                                            se rellenan con una variedad de ingredientes, como frijoles rojos, pasta de loto, 
+                                            y es tradicional en China meter yemas de huevo, y se suelen cocinar en el horno.
+                                        </p>
+                                        <p class="product-price">$5,000</p>
+                                
+                                        <!-- Iconos de acción -->
+                                        <div class="product-actions">
+                                            <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                            <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                            <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                            <img alt="Añadir al Carrito" class="add-to-cart" data-id="2-2" data-name="MOONCAKES" data-price="5,000" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                        </div>
+                                
+                                        <!-- Nota extra -->
+                                        <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas.</i></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="tabla-postres-td">
+                                <div class="card"> <!----- TARJETA ----->
+                                    <!-- Imagen del producto -->
+                                    <img class="img-postres" src="https://nihaomarket.es/wp-content/uploads/2023/11/pastel-herradura-300x200.webp" alt="Producto">
+                                
+                                    <!-- Descripción del producto -->
+                                    <div class="product-info">
+                                        <h3 class="product-title"> MATIGAO<br> PASTEL DE HERRADURA (3unid.)</h3>
+                                        <p class="product-description">Una joya culinaria China que ha perdurado a lo largo de los siglos. 
+                                            Elaborado a partir de castañas de agua y azúcar blanca, el pastel de herradura se presenta en 
+                                            un tono amarillo translúcido que recuerda a la apariencia de la gelatina.
+                                        </p>
+                                        <p class="product-price">$7,000</p>
+                                
+                                        <!-- Iconos de acción -->
+                                        <div class="product-actions">
+                                            <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                            
+                                            <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                            <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                            
+                                            <img alt="Añadir al Carrito" class="add-to-cart" data-id="3-2" data-name="MATIGAO" data-price="7,000" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                        </div>
+                                
+                                        <!-- Nota extra -->
+                                        <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas.</i></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="tabla-postres-td">
+                                <div class="card"> <!----- TARJETA ----->
+                                    <!-- Imagen del producto -->
+                                    <img class="img-postres" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRri5cSfqgNT7VeQ6sDBFq3EX1h4gruLE1m4nFuI4wlFwz7t2t6" alt="Producto">
+                                
+                                    <!-- Descripción del producto -->
+                                    <div class="product-info">
+                                        <h3 class="product-title">DORAYAKI<br> PANQUEQUE RELLENO DE PASTA DULCE (3unid.)</h3>
+                                        <p class="product-description">El Dorayaki es un delicioso postre japonés que combina la suavidad de 
+                                            dos pancakes con un relleno dulce en su interior. Relleno Tradicionalmente de Anko (pasta de frijol rojo dulce), 
+                                            aunque también se pueden encontrar variantes con chocolate, crema de castañas, o frutas. De textura suave, esponjosa y 
+                                            ligeramente húmeda.
+                                        </p>
+                                        <p class="product-price">$8,500</p>
+                                
+                                        <!-- Iconos de acción -->
+                                        <div class="product-actions">
+                                            <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                            <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                            <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                            <img  alt="Añadir al Carrito" class="add-to-cart" data-id="4-2" data-name="DORAYAKI" data-price="8,500" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000" onclick="addToCart(this)">
+                                        </div>
+                                
+                                        <!-- Nota extra -->
+                                        <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas.</i></p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </main>
+
+            <footer>
+                <div class="rrss-icons">
+                    <a href="https://wa.me/543704298140" target="_blank">
+                        <img class="wpp" src="https://img.icons8.com/?size=100&id=16712&format=png&color=FFFFFF" alt="WhatsApp" />
+                    </a>
+                    
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img class="ig" src="https://img.icons8.com/?size=100&id=32292&format=png&color=FFFFFF" alt="Instagram" />
+                    </a>
+                    
+                    <a href="mailto:luluprintok@gmail.com" target="_blank">
+                        <img class="mail" src="https://img.icons8.com/?size=100&id=1669&format=png&color=FFFFFF" alt="Email: luluprintok@gmail.com" />
+                    </a>
+                    
+                </div>
+
+                <div class="impulsor ir-arriba">^</div>
+
+                <div class="payment-methods">
+                    <div class="payment-item">
+                        <i class="fas fa-money-check-alt" style="color: #00b3ff;"></i>
+                        <span>Mercado Pago</span>
+                    </div>
+                    <div class="payment-item">
+                        <i class="fas fa-credit-card" style="color: #0066ff;"></i>
+                        <span>Ualá</span>
+                    </div>
+                    <div class="payment-item">
+                        <i class="fab fa-paypal" style="color: rgb(235, 227, 227);"></i>
+                        <span>PayPal</span>
+                    </div>
+                </div>
+                                    
+                <div class="LEGALESyFIRMA">
+                    <div class="TyC">
+                        <img class="tyc-img" src="https://img.icons8.com/?size=100&id=6552&format=png&color=FFFFFF" alt="Términos y Condiciones" target="_blank">
+                        <a class="tyc-link" href="tyc.html" target="_blank">T&C</a>
+                    </div>
+                    <div class="LULUPRINT">
+                        <p class="firma">&copy Lulú Print</p>
+                        <p class="WebDesign">WebDesign</p>
+                    </div>
+                </div>
+            </footer>
+    </div>
+
+        <script src="scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script src="pageup.js"></script>
+        
+        <script> //============================== AGREGAR AL CARRITO =============================/
+        
+            // Función para agregar un producto al carrito
+            function addToCart(event) {
+                const product = {
+                    id: event.target.getAttribute("data-id"),
+                    name: event.target.getAttribute("data-name"),
+                    price: event.target.getAttribute("data-price"),
+                    quantity: 1
+                };
+            
+                // Obtener el carrito actual del almacenamiento local o crear uno vacío
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            
+                // Verificar si el producto ya está en el carrito
+                const existingProductIndex = cart.findIndex(item => item.id === product.id);
+            
+                if (existingProductIndex > -1) {
+                    // Si el producto ya existe, aumenta la cantidad
+                    cart[existingProductIndex].quantity += 1;
+                } else {
+                    // Si el producto no existe, agregarlo al carrito
+                    cart.push(product);
+                }
+            
+                // Guardar el carrito actualizado en el almacenamiento local
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert("Producto agregado al carrito.");
+            }
+            
+            // Asignar el evento "click" a todos los botones "Añadir al Carrito"
+            document.querySelectorAll(".add-to-cart").forEach(button => {
+                button.addEventListener("click", addToCart);
+            });
+        </script>
+
+        
+        <!-- SCRIPTS JS DE BOOTSTRAP y POPPER desde CDN {Content Delivery Network (Red de Entrega de Contenidos)} -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> <!--Popper administra los elementos Bootstrap para fijar su posición-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+
+    </body>
+        
+</html>
+        

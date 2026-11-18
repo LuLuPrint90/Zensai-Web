@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>COMIDA INSTANTÁNEA - 前菜 ZENSAI - Asian Food</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="stylesheets.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> <!--LINK BOOTSTRAP-->
+    </head>
+    <body class="fondo-instantaneas">
+        <div class="PageContainer">    
+            <header>
+                    <!-- Barra de Navegación -->
+                    <nav class="navbar">
+
+                        <div class="nav-container">
+                            <!-- Logo Circular -->
+                        <div class="logo">
+                            <a href="index.html"><img src="ZensaiLogoWeb@300x.png" alt="Zensai-Logo"></a>
+                        </div>
+
+                            <!-- Parte 1: Inicio, Contacto, Nosotros -->
+                            <div class="nav-part web-info">
+                                <a href="index.html" class="nav-link" target="_blank">Inicio</a>
+                                <a href="contacto.html" class="nav-link" target="_blank">Contacto</a>
+                                <a href="nosotros.html" class="nav-link" target="_blank">Nosotros</a>
+                            </div>
+
+                        <!-- Parte 2: Login, Sign Up, Carrito -->
+                        <div class="nav-part registro">
+                            <a href="login.html" class="nav-link" target="_blank">Login</a>
+                            <a href="register.html" class="nav-link" target="_blank">Sign Up</a>
+                            <a href="carrito.html" class="nav-link" target="_blank"><img src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FFFFFF" alt="Carrito" class="carrito-ico"></a>
+                        </div>
+
+                        <!-- Menú hamburguesa para móviles -->
+                        <div class="menu-toggle">&#9776;</div>
+                    </nav>
+            </header>
+                
+            <main class="main-instantaneas">
+                    <h2 class="instantaneas-title">COMIDA INSTANTÁNEA</h2>
+                    <h2 class="sub-title">
+                        <i>Éstos son los mejores productos que tenemos para ti.</i>
+                        <hr class="instantaneas-hr">
+                    </h2>
+                    <br><br>
+
+                    <!-- CARRUSEL CON TARJETAS DE COMIDA PICANTE-->
+                    
+                    <h3 class="h3-instantaneas">CON PICANTE</h3>
+                    <div id="slider-picante" class="slider-container">
+                        <div class="slide">
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiqY53ESb_vGRweSK6vkIpFqhPYx2O3KQBQ&s" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">NISSIN RAMEN <br> FIDEOS INSTANTÁNEOS JAPONESES - ACEITE DE AJONJOLÍ PICANTE (101gr.)</h3>
+                                    <p class="product-description">Deliciosos fideos instantáneos con sabor a Aceite de Ajonjolí Picante. Solamente necesitas 
+                                        <strong> 500mL de agua hervida</strong>, sumerge los fideos por 3 min., luego agregalos (con toda el agua) junto al 
+                                        sasonador en polvo en un plato hondo y, finalmente, añade el sasonador en aceite. Mezcalos bien y ¡Buen Provecho!
+                                    </p>
+                                    <p class="product-price">$5,000</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="1-1" data-name="NISSIN-RAMEN-AJONJOLI" data-price="5,000" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas.</i></p>
+                                </div>
+                            </div>  
+                            
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRBX0GnOs9I5i4Cl0l7xbEPTaclWjhSTPGjw&s" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">NISSIN RAMEN <br> FIDEOS INSTANTÁNEOS JAPONESES - MARISCOS PICANTES (101gr.)</h3>
+                                    <p class="product-description">Deliciosos fideos instantáneos con sabor a Mariscos Picantes. 
+                                        Solamente necesitas 500mL de agua hervida, sumerge los fideos por 3 min., luego agregalos (con toda el agua) 
+                                        junto al sasonador en polvo en un plato hondo y, finalmente, añade el sasonador en aceite. Mezcalos bien y ¡Buen Provecho.
+                                    </p>
+                                    <p class="product-price">$5,000</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">-->
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> 
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="2-1" data-name="NISSIN-RAMEN-MARISCOS" data-price="5,000" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://i5.walmartimages.com/seo/Shin-Ramyun-Cup-6-Cups-Korean-Noodle-Spicy-Tasty-Beef-Soup-Korea-Ramen-Hot_577a19f9-8a75-4af4-8f3f-3db20b778c40_1.ac0242395625be1d8060b51cb7961e24.jpeg" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title"> NONGSHIM NOODLES SHIN CUP<br> SOPA INSTANTÁEA DE FIDEOS COREANOS - PICANTE (68gr)</h3>
+                                    <p class="product-description">Sabrosísimo fideo de copa pequeña  ideal para picar. Con el famoso sabor coreano perfecto. 
+                                        Nuevos envases reciclables que permiten usar las temperaturas cálidas del microondas para cocinar mejores fideos. 
+                                        Su nueva fórmula está hecha con menos sodio y sin agregar MSG. La armonía del sabor yace en el pimiento rojo picante 
+                                        y el caldo de res transparente, pimiento rojo dulce y la cebolla verde seca, el hongo shiitake y la zanahoria seca procesada 
+                                        por el método de liofilización. ¡Estos fideos de tazón seguramente complacerán a todos!
+                                    </p>
+                                    <p class="product-price">$6,000</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="3-1" data-name="NONGSHIM-NOODLE-SOUP-CUP" data-price="6,000" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDDbTQHqnwU7FieTWZc1LIok-cqgsGtrQwjro69T4o1YZURSGR" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">ZAOIAN <br> SOPA DE FIDEOS CHINOS PICANTES Y AMARGOS (117gr.)</h3>
+                                    <p class="product-description">Increíble sopa de fideos anchos picantes y amargos, con sabor Chongqing 
+                                        (picante, fresco, aromático y adormecedor). Entre sus ingredientes se destacan: cebolletas, sceite de chile, sal, 
+                                        glutamato de sodio, salsa de soja, cebolla de verdeo picada, caldo de jengibre, caldo de ajo. En la cultura China 
+                                        se los disfruta bien calientes (65°C ~ 75°C) y como desayuno rápido conveniente.
+                                    </p>
+                                    <p class="product-price">$8,400</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="4-1" data-name="ZAOIAN-CH-NOODLE-HOT" data-price="8,400" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://m.media-amazon.com/images/I/61vzBOUN8kL._AC_SL1000_.jpg" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">CJ HETBAHN CUPBAHN <br> ARROZ BLANCO COCINADO CON KIMCHI FRITO (247gr.)</h3>
+                                    <p class="product-description">Sabor picante al agregar el kimchi frito. Puedes añadir más ingredientes a tu gusto.
+                                        Cómelo cómodamente en cualquier momento y lugar gracias a su practicidad de cocción y su cómodo recipiente con cuchara incluida.
+                                        Puedes cocinarlo en un horno microondas o con agua hervida, por 2 min. <br> 
+                                        
+                                    <p class="product-price">$5,500</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="5-1" data-name="CUPBAHN-RICE-KIMCHI" data-price="5,500" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!---------------------- BOTONES DEL CARRUSEL ------------------------>
+                        <div class="prev-picante" onclick="moveSlide('slider-picante', -1)">&#10094;</div>
+                        <div class="next-picante" onclick="moveSlide('slider-picante', 1)">&#10095;</div>
+                    </div>
+                    <br>
+                    <!--====================================================================================-->
+                    <br>
+                    
+                    <!-- CARRUSEL CON TARJETAS DE COMIDA SIN PICANTE -->
+                    
+                    <h3 class="h3-instantaneas">SIN PICANTE</h3>
+                    <div id="slider-sinpicante" class="slider-container">
+                        <div class="slide">
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw9_czjq0sFgB-WYkssyy2eiVkUnxFnyflS0IuplRo2riHDjMb" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">RETBST<br> SOPA CHINA DE POLVO DE FRUTAS (500gr.)</h3>
+                                    <p class="product-description"> Riquísima sopa de almidón de raíz de loto, sabor suave y delicado. 
+                                        Una especialidad China para un distinguido desayuno saludable.
+                                        Contiene almidón de raíz de loto, pasas, dátiles rojos, semillas de calabaza, semillas de sésamo y almendras. 
+                                        Para prepararla sólo necesitas verter agua hirviendo por encima de los 95°C sobre una razonable cantidad de la sopa en polvo, 
+                                        revolver bien y a disfrutar.</p>
+                                    <p class="product-price">$4,500</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="1-2" data-name="CHIN-FRUITS-SOUP" data-price="4,500"  src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>  
+                            
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://m.media-amazon.com/images/I/51J1tkjLkXL._AC_SS250_.jpg" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title"> YOPOKKI INSTANT TTEOKBOKKI <br>  PASTEL CILÍNDRICO DE ARROZ CON SALSA COREANO (960gr)</h3>
+                                    <p class="product-description">Un delicioso sabor de varios platos coreanos para que se puedan preparar 
+                                        en minutos pero accesibles en cualquier parte del mundo. Este plato en particular tiene una textura suave mezclada 
+                                        con una mantequilla de cebolla nada picante. Agrega 500mL de agua tibia, mézclalos juntos, luego cúbrelos con la tapa 
+                                        en microondas durante 2 minutos (basado en un microondas de 1000 W, si la potencia es menor, es posible que deba
+                                        aumentar el tiempo de cocción). Es un bocadillo que se puede disfrutar a la ligera, se puede comer fácilmente cuando sales,
+                                        y también es un peritivo muy querido por los niños.</p>
+                                    <p class="product-price">$5,500</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="2-2" data-name="YOPOKKI-INSTANT-RICE-CUP" data-price="5,500" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://koreanmarket.es/wp-content/uploads/2024/01/Potato-Noodle-Soup-Nongshim-Portada-800x800.jpg" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title"> NONGSHIM POTATO NOODLE SOUP <br> FIDEOS RAMYUN CON SOPA DE PAPA (100gr.)</h3>
+                                    <p class="product-description">Disfruta del sabor hogareño. Una deliciosa sopa de fideos con papas, perfecta para calentar tu día.
+                                        <ul>
+                                            <li>Sabor Casero Auténtico: Receta tradicional de sopa de patata para un gusto familiar.</li>
+                                            <li>Fideos Suaves y Deliciosos: Perfectamente combinados con el caldo para una textura agradable.</li>
+                                            <li>Comida Rápida y Nutritiva: Lista en minutos, ideal para una alimentación equilibrada.</li>
+                                            <li>Ingredientes de Calidad: Hecho con los mejores ingredientes para un sabor excepcional.</li>
+                                        </ul>
+                                    </p>
+                                    <p class="product-price">$5,500</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="3-2" data-name="NONGSHIM-POTATO-NOODLE" data-price="5,500" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://nipponandco.fr/34868-large_default/sopa-de-miso-y-tofu-kikkoman-insttofu-miso.jpg" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">KIKKOMAN TOFU MISO INSTANT <br> SOPA INSTANTÁNEA DE TOFU Y MISO (30gr.)</h3>
+                                    <p class="product-description">Bolsa de 3 porciones de sopa. <br>  La sopa de miso está presente en casi todas las comidas japonesas, hay muchas formas de prepararla. Puede agregarle muchas verduras de temporada, cocinar previamente en un caldo dashi, también puede usar miso más o menos salado.
+                                        <strong>Preparación:</strong> vierte el contenido de una bolsita de miso y una bolsita de guarnición en un tazón pequeño para sopa. Añade 160 mL de agua hirviendo y mezclar suavemente.
+                                        <strong>Ingredientes:</strong>  miso en polvo blanco y rojo (soja, arroz, sal) (77%), tofu deshidratado (soja, gelificante (cloruro de magnesio)) (10%), algas deshidratadas, almidón blanqueado, sabor (glutamato monosódico, inosinato disódico, guanilato disódico), polvo de bonito (pescado), cebolla tierna deshidratada, polvo de algas marinas, extracto de levadura, regulador de acidez (carbonato de sodio).
+                                    </p>
+                                    <p class="product-price">$3,500</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="4-2" data-name="KIKKOMAN-TOFU-MISO" data-price="3,500" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!---------------------- BOTONES DEL CARRUSEL ------------------------>
+                        <div class="prev-sinpicante" onclick="moveSlide('slider-sinpicante', -1)">&#10094;</div>
+                        <div class="next-sinpicante" onclick="moveSlide('slider-sinpicante', 1)">&#10095;</div>
+                    </div>
+            </main>
+                
+                <footer>
+                    <div class="rrss-icons">
+                        <a href="https://wa.me/543704298140" target="_blank">
+                            <img class="wpp" src="https://img.icons8.com/?size=100&id=16712&format=png&color=FFFFFF" alt="WhatsApp" />
+                        </a>
+                        
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img class="ig" src="https://img.icons8.com/?size=100&id=32292&format=png&color=FFFFFF" alt="Instagram" />
+                        </a>
+                        
+                        <a href="mailto:luluprintok@gmail.com" target="_blank">
+                            <img class="mail" src="https://img.icons8.com/?size=100&id=1669&format=png&color=FFFFFF" alt="Email: luluprintok@gmail.com" />
+                        </a>
+                        
+                    </div>
+
+                    <div class="impulsor ir-arriba">^</div>
+
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <i class="fas fa-money-check-alt" style="color: #00b3ff;"></i>
+                            <span>Mercado Pago</span>
+                        </div>
+                        <div class="payment-item">
+                            <i class="fas fa-credit-card" style="color: #0066ff;"></i>
+                            <span>Ualá</span>
+                        </div>
+                        <div class="payment-item">
+                            <i class="fab fa-paypal" style="color: rgb(235, 227, 227);"></i>
+                            <span>PayPal</span>
+                        </div>
+                    </div>
+                                        
+                    <div class="LEGALESyFIRMA">
+                        <div class="TyC">
+                            <img class="tyc-img" src="https://img.icons8.com/?size=100&id=6552&format=png&color=FFFFFF" alt="Términos y Condiciones" target="_blank">
+                            <a class="tyc-link" href="tyc.html" target="_blank">T&C</a>
+                        </div>
+                        <div class="LULUPRINT">
+                            <p class="firma">&copy Lulú Print</p>
+                            <p class="WebDesign">WebDesign</p>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+
+            <script src="scripts.js"></script>
+            <script src="https://code.jquery.com/jquery-latest.js"></script>
+            <script src="pageup.js"></script>
+            <script id="CARRUSEL">
+                    let currentSlideIndex = {
+                        "slider-picante": 0,
+                        "slider-sinpicante": 0
+                    };
+
+                    function moveSlide(sliderId, step) {
+                        const slider = document.getElementById(sliderId);
+                        const slides = slider.querySelectorAll('.card');
+                        const totalSlides = slides.length;
+
+                        // Actualiza el índice de la diapositiva
+                        currentSlideIndex[sliderId] += step;
+
+                        // Reinicia el índice si es necesario
+                        if (currentSlideIndex[sliderId] < 0) {
+                            currentSlideIndex[sliderId] = totalSlides - 1;
+                        } else if (currentSlideIndex[sliderId] >= totalSlides) {
+                            currentSlideIndex[sliderId] = 0;
+                        }
+
+                        // Cambia la posición de la diapositiva
+                        const slideWidth = slides[0].clientWidth;
+                        const offset = -currentSlideIndex[sliderId] * slideWidth;
+                        slider.querySelector('.slide').style.transform = `translateX(${offset}px)`;
+                    }
+
+            </script>
+            <script id="AGREGAR-AL-CARRITO">
+                document.querySelectorAll('.add-to-cart').forEach(button => {
+                    button.addEventListener('click', () => {
+                        // Obtener datos del producto desde los atributos `data-`
+                        const id = button.getAttribute('data-id');
+                        const name = button.getAttribute('data-name');
+                        const price = button.getAttribute('data-price');
+                
+                        // Crear un objeto de producto
+                        const product = { id, name, price };
+                
+                        // Obtener el carrito actual del localStorage o inicializar uno vacío
+                        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                
+                        // Añadir el producto al carrito
+                        cart.push(product);
+                
+                        // Guardar el carrito actualizado en localStorage
+                        localStorage.setItem('cart', JSON.stringify(cart));
+                
+                        alert(`${name} añadido al carrito`);
+                    });
+                });
+            </script>
+            
+            
+            <!-- SCRIPTS JS DE BOOTSTRAP y POPPER desde CDN {Content Delivery Network (Red de Entrega de Contenidos)} -->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> <!--Popper administra los elementos Bootstrap para fijar su posición-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+
+    </body>
+        
+</html>

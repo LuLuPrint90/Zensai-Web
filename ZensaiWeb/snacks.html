@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>SNACKS - 前菜 ZENSAI - Asian Food</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="stylesheets.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> <!--LINK BOOTSTRAP-->
+    </head>
+    <body class="fondo-snacks">
+        <div class="PageContainer">    
+            <header>
+                    <!-- Barra de Navegación -->
+                    <nav class="navbar">
+
+                        <div class="nav-container">
+                            <!-- Logo Circular -->
+                        <div class="logo">
+                            <a href="index.html"><img src="ZensaiLogoWeb@300x.png" alt="Zensai-Logo"></a>
+                        </div>
+
+                            <!-- Parte 1: Inicio, Contacto, Nosotros -->
+                            <div class="nav-part web-info">
+                                <a href="index.html" class="nav-link" target="_blank">Inicio</a>
+                                <a href="contacto.html" class="nav-link" target="_blank">Contacto</a>
+                                <a href="nosotros.html" class="nav-link" target="_blank">Nosotros</a>
+                            </div>
+
+                        <!-- Parte 2: Login, Sign Up, Carrito -->
+                        <div class="nav-part registro">
+                            <a href="login.html" class="nav-link" target="_blank">Login</a>
+                            <a href="register.html" class="nav-link" target="_blank">Sign Up</a>
+                            <a href="carrito.html" class="nav-link" target="_blank"><img src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FFFFFF" alt="Carrito" class="carrito-ico"></a>
+                        </div>
+
+                        <!-- Menú hamburguesa para móviles -->
+                        <div class="menu-toggle">&#9776;</div>
+                    </nav>
+            </header>
+                
+            <main class="main-snacks">
+                    <h2 class="snacks-title">SNACKS</h2>
+                    <h2 class="sub-title">
+                        <i>Éstos son los mejores productos que tenemos para ti.</i>
+                        <hr class="instantaneas-hr">
+                    </h2>
+                    <br><br>
+
+                    <!-- CARRUSEL CON TARJETAS DE SNACKS DULCES-->
+                    
+                    <h3 class="h3-snacks">DULCES</h3>
+                    <div id="slider-snackdulce" class="slider-container">
+                        <div class="slide">
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-snacks" src="https://i.ebayimg.com/00/s/MTYwMFgxNjAw/z/NJkAAOSwg81k02sm/$_57.JPG?set_id=8800005007" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">MEIJI HELLO PANDA <br> MINI GALLETITAS RELLENAS CON FIGURAS DE PANDA (50gr.)</h3>
+                                    <p class="product-description">Deliciosas galletitas rellenas, hay 5 sabores para elegir: caramelo, chocolate, doble chocolate y leche. 
+                                        Súper dulces, ideal para la merienda del colegio o un descanso en el trabajo. [Origen: Japón]. </p>
+                                    <p class="product-price">$3,600</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img alt="Añadir al Carrito" class="add-to-cart" data-id="1-1" data-name="MEIJI-HELLO-PANDA" data-price="3,600" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas.</i></p>
+                                </div>
+                            </div>  
+                            
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSvu59jwMV-MaU8Fps0-cpXgxct3jP9qZeXAMOQDvKPHH5J_qe_nn8ZJbZGJ2Y4djuB8-g_cDmvE9RGEkHtlWuVMtaBKRA3Jfcw0lp1_8KEHP_g-PcPsZzboA&usqp=CAE" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title"> LOTTE PEPERO STICKS <br> PALITOS COMESTIBLES DE CHOCOLATE CON DIFERENTES SABORES AGREGADOS (32gr.)</h3>
+                                    <p class="product-description">Golosina surcoreana que consiste en un bastón de galleta con cobertura de sabor, normalmente chocolate;
+                                        aunque puedes elegir entre <strong> 5 diferentes variedad de sabores:</strong> original (puro chocolate), con almendras, con maní, 
+                                        galletita blanca (símil oreo), choco relleno. Contenido: 40u. por caja.
+                                    </p>
+                                    <p class="product-price">$7,500</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">-->
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> 
+                                        
+                                        <img alt="Añadir al Carrito" class="add-to-cart" data-id="2-1" data-name="LOTTE-PEPERO" data-price="7,500" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://http2.mlstatic.com/D_NQ_NP_797348-MLM74731273269_022024-O.webp" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">HAITAI PLUM CANDY<br> CARAMELOS COREANOS SABOR CIRUELA (130gr)</h3>
+                                    <p class="product-description">Bolsa de caramelos de larga duración, color rosa brillante,
+                                        con una línea central roja libre de lactosa, contiene vitamina E. Cada dulce es macizo 
+                                        con un delicioso sabor a ciruela. Pruébalo cuando necesites una sensación refrescante 
+                                        después de cada comida. Su sabor agridulce delicioso lo volvió una golosina icónica Surcorena,
+                                        es de color rosa brillante con una línea central roja. Único con vitamina E, un antioxidante 
+                                        que ayuda a proteger las células de los radicales libres.
+                                    </p>
+                                    <p class="product-price">$4,000</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                    
+                                        <img alt="Añadir al Carrito" class="add-to-cart" data-id="3-1" data-name="HAITAI-PLUM-CANDY" data-price="4,000" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIbpVxfq10HGot-lDsz8n0WaAH7KdK3Folk7nFYvF6W4efpbGg" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">LOTTE MALANG COW SOFT MILK<br> MALVAVISCOS DE CARAMELO (79.1gr.)</h3>
+                                    <p class="product-description">Esponjosa base de caramelo, su textura única fluye suavemente en tu boca como una almohada de algodón.
+                                        ¡Hecho de leche de calidad premium, este dulce se derrite como si estuvieras comiendo una nube! Disponible en 2 sabores: Fresa y Leche.</p>
+                                    <p class="product-price">$4,000</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img alt="Añadir al Carrito" class="add-to-cart" data-id="4-1" data-name="LOTTE-MALANG-COW" data-price="4,000" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!---------------------- BOTONES DEL CARRUSEL ------------------------>
+                        <div class="prev-snackdulce" onclick="moveSlide('slider-snackdulce', -1)">&#10094;</div>
+                        <div class="next-snackdulce" onclick="moveSlide('slider-snackdulce', 1)">&#10095;</div>
+                    </div>
+                    <br>
+                    <!--====================================================================================-->
+                    <br>
+                    
+                    <!-- CARRUSEL CON TARJETAS DE SNACKS SALADOS -->
+                    
+                    <h3 class="h3-snacks">SALADOS</h3>
+                    <div id="slider-snacksalado" class="slider-container">
+                        <div class="slide">
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-snacks" src="https://megakfood.com/cdn/shop/products/03114621632_1_720x.jpg?v=1652938496" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">NONGSHIM SHRIMP FLAVORED CHIPS<br> PAPAS FRITAS SABOR CAMARÓN (45gr.)</h3>
+                                    <p class="product-description"> Papas fritas con sabor a camarón, son crujientes y el sabor a camarón no es abrumador.
+                                        Se puede disfrutar en cualquier lugar y en cualquier momento. Puedes acompañarlo con ketchup o mayonesa para realzar el sabor. 
+                                        Disfrútalo con café, té o leche para tener una gran experiencia de sabores.
+                                    </p>
+                                    <p class="product-price">$3,600</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img alt="Añadir al Carrito" class="add-to-cart" data-id="1-2" data-name="NONGSHIM-SHRIMP-CHIPS" data-price="3,600" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>  
+                            
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://res.cloudinary.com/happyorder/image/upload/e_trim:10:ffffff00,w_605/e_trim:10:ffffff00,/b_rgb:ffffff,f_auto,q_auto:eco,fl_lossy,w_605,h_750,g_center,c_fit/v1626460895/products/1545-1626460895" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title"> KOIKEYA POTECHI <br> PAPAS FRITAS SABORIZADAS - 3 VARIEDADES (100gr)</h3>
+                                    <p class="product-description">Si eres un amante de la cultura japonesa y no puedes resistirte a sus deliciosos 
+                                        y originales snacks, ya no hace falta que tomes un avión para disfrutar de algunos de ellos porque nosotros 
+                                        lo traemos para tí. Su sabor estrella es el de Wasabi y Nori. Cuando des el primer mordisco ya no querrás comer 
+                                        otras papas porque son una auténtica explosión de sabores, fruto de mezclar la suavidad del alga Nori, 
+                                        tan usada en la cocina japonesa, con el picante del Wasabi, que sube por tu nariz y te genera unas sensación excepcional. 
+                                        Perfecto para comer en cualquier lugar y momento, que sin duda encantará todos los paladares exigentes
+                                        que no se conforman con cualquier snack. Prueba también los sabores: Teriyaki y Ciruela Encurtida Agridulce</p>
+                                    <p class="product-price">$4,000</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img alt="Añadir al Carrito" class="add-to-cart" data-id="2-2" data-name="KOIKEYA POTECHI" data-price="4,000" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://acdn.mitiendanube.com/stores/003/712/338/products/afvxf-c7f0a82355fab63aae17058730647645-640-0.webp" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">COSMOS SPICY CORN CHIPS<br> COPOS DE MAIZ PICANTE (34gr.)</h3>
+                                    <p class="product-description"> Un emocionante snack coreano que combina la intensidad del maíz 
+                                        con el toque picante que tanto te gusta. Estas crujientes chips te ofrecen una experiencia 
+                                        de sabor irresistible, descubriendo la perfecta armonía entre el picante y lo crujiente.</p>
+                                    <p class="product-price">$4,700</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible"> -->
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK">
+                                        
+                                        <img alt="Añadir al Carrito" class="add-to-cart" data-id="3-2" data-name="COSMOS-SPICY" data-price="4,700" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-instantaneas" src="https://m.media-amazon.com/images/I/61NfinS5OTL._AC_UF894,1000_QL80_.jpg" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">NINJAPO BOURBON RUMANDO <br> BOCADITOS DULCES CONFITADOS (850gr.)</h3>
+                                    <p class="product-description">Es un delicioso snack japonés que combina la tradición de los dulces orientales con un toque moderno. 
+                                        Este producto se presenta en tres sabores distintos, cada uno ofreciendo una experiencia única.
+                                        <ul>
+                                            <li><strong>Original:</strong> Un clásico que destaca por su sabor equilibrado y textura crujiente. Perfecto para cualquier momento del día.</li>
+                                            <li><strong>Matcha:</strong> Infusionado con el auténtico té verde japonés, este sabor ofrece un toque terroso y ligeramente amargo que contrasta con la dulzura del snack.</li>
+                                            <li><strong>Sakura:</strong> Inspirado en la flor de cerezo, este sabor delicado es floral y dulce, evocando la esencia de la primavera japonesa.</li>
+
+                                        </ul>
+                                    </p>
+                                    <p class="product-price">$4,300</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img alt="Añadir al Carrito" class="add-to-cart" data-id="4-2" data-name="NINJAPO-BOURBON-RUMANDO" data-price="4,300" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!---------------------- BOTONES DEL CARRUSEL ------------------------>
+                        <div class="prev-snacksalado" onclick="moveSlide('slider-snacksalado', -1)">&#10094;</div>
+                        <div class="next-snacksalado" onclick="moveSlide('slider-snacksalado', 1)">&#10095;</div>
+                    </div>
+            </main>
+                
+                <footer>
+                    <div class="rrss-icons">
+                        <a href="https://wa.me/543704298140" target="_blank">
+                            <img class="wpp" src="https://img.icons8.com/?size=100&id=16712&format=png&color=FFFFFF" alt="WhatsApp" />
+                        </a>
+                        
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img class="ig" src="https://img.icons8.com/?size=100&id=32292&format=png&color=FFFFFF" alt="Instagram" />
+                        </a>
+                        
+                        <a href="mailto:luluprintok@gmail.com" target="_blank">
+                            <img class="mail" src="https://img.icons8.com/?size=100&id=1669&format=png&color=FFFFFF" alt="Email: luluprintok@gmail.com" />
+                        </a>
+                        
+                    </div>
+
+                    <div class="impulsor ir-arriba">^</div>
+
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <i class="fas fa-money-check-alt" style="color: #00b3ff;"></i>
+                            <span>Mercado Pago</span>
+                        </div>
+                        <div class="payment-item">
+                            <i class="fas fa-credit-card" style="color: #0066ff;"></i>
+                            <span>Ualá</span>
+                        </div>
+                        <div class="payment-item">
+                            <i class="fab fa-paypal" style="color: rgb(235, 227, 227);"></i>
+                            <span>PayPal</span>
+                        </div>
+                    </div>
+                                        
+                    <div class="LEGALESyFIRMA">
+                        <div class="TyC">
+                            <img class="tyc-img" src="https://img.icons8.com/?size=100&id=6552&format=png&color=FFFFFF" alt="Términos y Condiciones" target="_blank">
+                            <a class="tyc-link" href="tyc.html" target="_blank">T&C</a>
+                        </div>
+                        <div class="LULUPRINT">
+                            <p class="firma">&copy Lulú Print</p>
+                            <p class="WebDesign">WebDesign</p>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+
+            <script src="scripts.js"></script>
+            <script src="https://code.jquery.com/jquery-latest.js"></script>
+            <script src="pageup.js"></script>
+            <script id="CARRUSEL">
+                    let currentSlideIndex = {
+                        "slider-snackdulce": 0,
+                        "slider-snacksalado": 0
+                    };
+
+                    function moveSlide(sliderId, step) {
+                        const slider = document.getElementById(sliderId);
+                        const slides = slider.querySelectorAll('.card');
+                        const totalSlides = slides.length;
+
+                        // Actualiza el índice de la diapositiva
+                        currentSlideIndex[sliderId] += step;
+
+                        // Reinicia el índice si es necesario
+                        if (currentSlideIndex[sliderId] < 0) {
+                            currentSlideIndex[sliderId] = totalSlides - 1;
+                        } else if (currentSlideIndex[sliderId] >= totalSlides) {
+                            currentSlideIndex[sliderId] = 0;
+                        }
+
+                        // Cambia la posición de la diapositiva
+                        const slideWidth = slides[0].clientWidth;
+                        const offset = -currentSlideIndex[sliderId] * slideWidth;
+                        slider.querySelector('.slide').style.transform = `translateX(${offset}px)`;
+                    }
+
+            </script>
+            <script id="AGREGAR-AL-CARRITO">
+                document.querySelectorAll('.add-to-cart').forEach(button => {
+                    button.addEventListener('click', () => {
+                        // Obtener datos del producto desde los atributos `data-`
+                        const id = button.getAttribute('data-id');
+                        const name = button.getAttribute('data-name');
+                        const price = button.getAttribute('data-price');
+                
+                        // Crear un objeto de producto
+                        const product = { id, name, price };
+                
+                        // Obtener el carrito actual del localStorage o inicializar uno vacío
+                        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                
+                        // Añadir el producto al carrito
+                        cart.push(product);
+                
+                        // Guardar el carrito actualizado en localStorage
+                        localStorage.setItem('cart', JSON.stringify(cart));
+                
+                        alert(`${name} añadido al carrito`);
+                    });
+                });
+            </script>
+            
+            
+            <!-- SCRIPTS JS DE BOOTSTRAP y POPPER desde CDN {Content Delivery Network (Red de Entrega de Contenidos)} -->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> <!--Popper administra los elementos Bootstrap para fijar su posición-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+
+    </body>
+        
+</html>

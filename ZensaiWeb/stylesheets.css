@@ -1,0 +1,1238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+header{
+    width: 100%;
+    display: flex;
+    background-color: rgba(255, 102, 0, 0.37);
+}
+
+/*===================================================================================*/
+/* -------------------------------- TIPOGRAFÍA ------------------------------------- */
+/*===================================================================================*/
+.karla{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*===================================================================================*/
+/*------------------------------ ESTILOS DE HEADER --------------------------------- */
+/*===================================================================================*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "karla", sans-serif;
+    font-size: 30px;
+    font-style:normal;
+    font-weight: lighter;
+}
+
+
+/*===================================================================================*/
+/*---------------------------- FONDOS DE LAS SECCIONES ------------------------------*/
+/*===================================================================================*/
+.fondo-inicio{
+    background-image: url(https://images.unsplash.com/photo-1630973432975-01a91e8f4311?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+.fondo-bebidas{
+    background-image: url(https://images.unsplash.com/photo-1618450483934-db421d2e739c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.fondo-instantaneas{
+    background-image: url(https://images.unsplash.com/photo-1526318896980-cf78c088247c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+.fondo-postres{
+    background-image: url(https://images.unsplash.com/photo-1501747188-61c00b3d8ba0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+}
+.fondo-especias{
+    background-image: url(https://images.unsplash.com/photo-1643879397174-4f10ac503566?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.fondo-snacks{
+    background-image: url(https://images.unsplash.com/photo-1586195831043-72f28861359d?q=80&w=1418&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+.fondo-contacto{
+    background-image: url(https://images.unsplash.com/photo-1585946494583-6afdd20ec23e?q=80&w=1336&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+.fondo-nosotros{
+    background-image: url(https://images.unsplash.com/photo-1621871908119-295c8ce5cee4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+.fondo-carrito{
+    background-image: url(https://images.unsplash.com/photo-1681667144167-65255b2b9485?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+
+
+
+/*===================================================================================*/
+/* --------------------------- ESTILOS CONTENEDOR DEL NAV ---------------------------*/
+/*===================================================================================*/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    margin: 35px;
+    width: 100%;
+    padding: 20px;
+    display: block;
+}
+
+.nav-container { /* Contiene los links del Nav */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/*===================================================================================*/
+/* ------------------------ ESTILOS PARTE 1 y 2 DEL NAV -----------------------------*/
+/*===================================================================================*/
+.nav-part {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+
+/*===================================================================================*/
+/* ------------------------ LOGO CIRCULAR CENTRADO --------------------------------- */
+/*===================================================================================*/
+.logo { /* caja circular que contiene al logo */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(8%);
+    
+}
+
+.logo img { /* Estilos de la imagen del logo */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Radio que forma el círculo */
+}
+
+.carrito-ico{
+    width: 40px;
+    height: 40px;
+}
+
+
+/*===================================================================================*/
+/*------------------------------ MENÚ HAMBURGUESA -----------------------------------*/
+/*===================================================================================*/
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container{
+    margin-top: 200px;
+    margin-left: 80px;
+    width: auto;
+    height: auto;
+    position: relative;
+    align-content: center;
+}
+
+
+/*===================================================================================*/
+/* -------------------------------- ESTILOS DEL MAIN ------------------------------- */
+/*===================================================================================*/
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 50px;
+    background-color: rgba(255, 102, 0, 0.37);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+h1{
+    color: white;
+    text-shadow: rgba(0, 0, 0);
+    text-align: center;
+}
+
+.inicio-h2{
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+    text-shadow: rgb(136, 1, 1);
+    text-align:center;
+}
+
+h2{
+    text-align: start;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+    width: auto;
+    text-shadow: 2px 3px 4px #000000bd;
+}
+
+h3{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px 4px #000000bd;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    width: auto;
+    margin-left: 85px;
+    margin-top: -30px;
+    text-shadow: 2px 1px 1px #000;
+}
+
+.a-main{
+    text-decoration: none;
+}
+
+.a-main:hover{
+    font-weight: bold;
+}
+
+.PageContainer{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+
+/*=====================================================================================*/
+/*----------------------------- ESTILOS DE NOSOTROS Y CONTACTO ------------------------*/
+/*=====================================================================================*/
+.contacto-links, 
+.Acerca-De{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.punto-de-encuentro, 
+.ventas, 
+.siguenos, 
+.suscribete{
+    display: flex;
+    align-content: flex-start;
+    margin-top: 20px;
+}
+
+.icono-nosotros{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.Gmap{
+    margin-left: 50px;
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+}
+
+.nosotros-mision-vision{
+    text-align: justify;
+}
+
+.img-nosotros{
+    width: 500px;
+    height: 470px;
+    margin: 50px;
+    border-radius: 8px;
+}
+
+
+/*=====================================================================================*/
+/*--------------------- ESTILOS DEL SCRIPT DEL TEXTO CIRCULAR -------------------------*/
+/*=====================================================================================*/
+
+.text{
+	height: 200px;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+    position: relative;
+    display: inline-block;
+    transform-origin: 0 50%;
+    transform: rotate(0deg);
+    animation: animate 10s linear infinite;
+    transform-origin: 50% 50%; /*--- Ajusta el eje ---*/
+}
+
+@keyframes animate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+span {
+    position: absolute;
+	transform-origin: 0 100px;
+}
+
+.container{
+    margin-top: 100px;
+    margin-left: 25px;
+    width: auto;
+    height: auto;
+    position: relative;
+    align-content: center;
+}
+
+.element{
+    float: inline-start;
+    width: 150px;
+    height: 150px;
+    align-content: center;
+    font-size: 4em;
+    background-color: rgba(255, 0, 0, 65%);
+    opacity: 0.80;
+    margin: 35px;
+    border-radius: 50%;
+    
+}
+
+.element:hover{
+    border: solid 3px rgba(255, 0, 0, 50%);
+    margin: 15px;
+    opacity: 0.90;
+    background-color: rgba(255, 0, 0, 50%);
+}
+
+.bebidas, .comida-instantanea, 
+.postres, .especias, .snacks{
+    float: inline-start;
+    width: 150px;
+    height: 150px;
+    align-content: center;
+    font-size: 4em;
+    border-radius: 50%;
+}
+
+.h3-inicio{
+    font-size: 25px;
+    color: ghostwhite;
+}
+
+.pos-bebidas{
+    position: absolute;
+    left: 110px;
+    top: 10px;
+}
+
+.pos-instantaneas{
+    position: absolute;
+    left: 330px;
+    top: 10px;
+}
+
+.pos-postres{
+    position: absolute;
+    left: 550px;
+    top: 10px;
+}
+
+.pos-especias{
+    position: absolute;
+    left: 770px;
+    top: 6px;
+}
+
+.pos-snacks{
+    position: absolute;
+    left: 990px;
+    top: 6px;
+}
+
+
+/*===================================================================================*/
+/* ---------------------------- ESTILOS DEL REGISTRO Y LOGIN ----------------------- */
+/*===================================================================================*/
+.fondo-body-reg,
+.fondo-body-log{
+    background-image: url(https://images.unsplash.com/photo-1488900128323-21503983a07e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: cover;
+    font-family: "karla", sans-serif;
+    font-size: 30px;
+    font-style:normal;
+    font-weight: lighter;
+}
+
+.container-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-reg, .container-log{
+        margin-top: 50px;
+        margin-bottom: 150px;
+        position: relative;
+        align-content: center;
+        display: flex;
+}
+
+.register-main, .login-main{
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        padding: 20px;
+        background-color: rgba(255, 102, 0, 0.37);
+        display: flex;
+        justify-content: center;
+}
+
+.form-register, .form-login {
+    background-image: url(https://images.unsplash.com/photo-1635355347994-b79177b77e5c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(255, 1, 120, 0.692);
+}
+
+.form-register h2, .form-login h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+.register-label, .login-label{
+    color: white;
+    text-shadow: 1px 1px 1px rgb(141, 0, 122);
+    font-weight: bold;
+}
+
+.form-register label, .form-login label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-register input[type="text"],
+.form-register input[type="email"],
+.form-register input[type="password"],
+.form-login input[type="email"],
+.form-login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-register input[type="checkbox"],
+.form-login input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-register .submit-btn,
+.form-login .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: hsla(113, 100%, 50%, 0.5);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-register .submit-btn:hover {
+    background-color: #ff00ea8a;
+}
+
+.form-login .submit-btn:hover{
+    background-color: #ff00ea8a;
+}
+
+.a-form, .a-login {
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.a-form:hover {
+    text-decoration: underline;
+}
+
+.a-login:hover{
+    text-decoration: underline;
+}
+
+.p-form {
+    text-align: center;
+    font-size: medium;
+    color: rgb(255, 254, 251);
+    text-shadow: 2px 3px 10px rgb(255, 0, 221);
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+
+/*===================================================================================*/
+/*----------------------------- ESTILOS PÁGINA DE PRODUCTOS -------------------------*/
+/*===================================================================================*/
+
+.main-inicio, .main-bebidas,
+.main-instantaneas, .main-especias,
+.main-snacks, .main-carrito,
+.main-postres
+{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+.bebidas-title, .instantaneas-title,
+.especias-title, .postres-title,
+.snacks-title {
+    font-size: xx-large;
+    text-align: center;
+    margin: auto;
+}
+
+.sub-title {
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+    align-items: center;
+}
+
+.h3-bebidas, .h3-instantaneas,
+.h3-especias, .h3-postres,
+.h3-snacks, .h3-carrito {
+    margin-top: 50px;
+    font-size: medium;
+}
+
+.prod-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 24%;
+    top: 50px;
+}
+
+.inicio-hr, .bebida-hr, .instantaneas-hr,
+.especias-hr, .postres-hr,
+.snacks-hr {
+    display: flex;
+    margin-top: 10px;
+    width: inherit;
+    color: #ffffff;
+}
+
+.categoria{
+    display: flex;
+    align-content: flex-start;
+    margin: 20px;
+}
+
+.bebidas-alcoholicas, .bebidas-sin-alcohol,
+.picante-instantanea, .nopicante-instantanea,
+.snacks-dulces, .snacks-salados{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    margin: 25px;
+}
+
+
+/*===================================================================================*/
+/* ---------------------------- ESTILOS DEL CARRUSEL --------------------------------*/
+/*===================================================================================*/
+.slider-container {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.prev-alcohol, .prev-sinalcohol, .next-alcohol, .next-sinalcohol,
+.prev-picante, .prev-sinpicante, .next-picante, .next-sinpicante,
+.prev-snackdulce, .prev-snacksalado, .next-snackdulce, .next-snacksalado,
+.prev-aderezos, .prev-condimentos, .next-aderezos, .next-condimentos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-alcohol, .prev-sinalcohol,
+.prev-picante, .prev-sinpicante,
+.prev-snackdulce, .prev-snacksalado,
+.prev-aderezos, .prev-condimentos {
+    left: 0;
+}
+
+.next-alcohol, .next-sinalcohol,
+.next-picante, .next-sinpicante,
+.next-snackdulce, .next-snacksalado,
+.next-aderezos, .next-condimentos {
+    right: 0;
+}
+
+.card-img { /*---------------- img de las tarjetas del carrusel ---*/
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/*===================================================================================*/
+/*----------------------------- ESTILOS DE TARJETAS ---------------------------------*/
+/*===================================================================================*/
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffffab;
+    width: 100%;
+    min-width: 100%; /* Ocupa el ancho total del slider */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.img-instantaneas, .img-snacks,
+.img-especias, .img-condimentos,
+.img-postres{
+    width: 100%;
+    height: 600px;
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/*--- Contenedor de la Tarjeta ---*/
+.product-info {
+    flex: 1;
+    padding: 10px;
+}
+
+/*--- Estilos del título, precio y texto ---*/
+.product-title {
+    font-size: 20px;
+    margin: 0;
+    color: #000000;
+    text-decoration: none;
+}
+
+.product-description {
+    font-size: 16px;
+    margin: 20px;
+    color: #000;
+    text-shadow: none;
+    text-align: justify;
+    font-weight: 600;
+}
+
+ul{
+    margin: 35px;
+}
+
+ul li{
+    list-style:square;
+    text-align: start;
+    font-size:medium ;
+}
+
+.product-price {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin: 8px 0;
+    text-shadow: none;
+    text-align: center;
+}
+
+/*--- Sección de iconos ---*/
+.product-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 12px;
+}
+
+.product-actions img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.like-icon {
+    width: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.like-icon.liked {
+    content: url("https://img.icons8.com/?size=100&id=7697&format=png&color=FF0000"); /* Cambia la imagen cuando esté en estado "liked" */
+    transform: scale(1.2); /* Aumenta el tamaño para un efecto de "pop" */
+}
+
+.avaliable-icon{
+    pointer-events: none;
+}
+
+.add-to-cart {
+    background-color: transparent;
+    border: none; 
+    color: #333;
+    cursor: pointer; 
+}
+
+.add-to-cart:hover {
+    color: #11ff009a; 
+}
+
+/*--- Texto de nota extra ---*/
+.extra-note {
+    font-size: 13px;
+    color: #000;
+    margin: 10px;
+    text-shadow: none;
+    text-align: justify;
+}
+
+
+/*===================================================================================*/
+/* ---------------------------- ESTILOS DE TABLA DE SECCIÓN POSTRES -----------------*/
+/*===================================================================================*/
+
+.tabla-postres{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.498);
+}
+
+.tabla-postres-tr{
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+}
+
+.tabla-postres-td{
+    padding: 5px 25px 5px;
+}
+
+
+/*===================================================================================*/
+/* ---------------------------- ESTILOS DE TABLA DEL CARRITO ------------------------*/
+/*===================================================================================*/
+
+.tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.tabla-producto, .tabla-precio,
+.tabla-cantidad, .tabla-total{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tabla-carrito th,
+.tabla-carrito td {
+    padding: 10px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #ffffff7b;
+}
+
+.tabla-carrito th {
+    background-color: #f4f4f4;
+}
+
+#cart-total, #total-gral{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+}
+
+.icono-pin, .icono-wa,
+.icono-ig, .icono-ar{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.botones-carrito, #mensaje-vacío{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.volver-al-inicio, .clear-cart-btn {
+    text-decoration: none;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/*===================================================================================*/
+/* ------------------------------ ESTILOS DEL FOOTER ------------------------------- */
+/*===================================================================================*/
+footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.rrss-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rrss-icons a{
+    padding: 25px;
+    text-decoration: none;
+}
+
+.wpp, .ig, .mail{
+    width: 65px;
+    height: auto;
+}
+
+.wpp:hover{
+    transform: scale(1.2) rotate(10deg);
+}
+
+.ig:hover{
+    transform: scale(1.2) rotate(10deg);
+}
+
+.mail:hover{
+    transform: scale(1.2) rotate(10deg);
+}
+
+/*--- MÉTODOS DE PAGO ---*/
+
+.payment-methods {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: -51px;
+}
+
+.payment-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: #fffafa;
+    margin-left: 35px;
+}
+
+.payment-item i {
+    font-size: 32px; /* Tamaño del ícono */
+    margin-bottom: 8px;
+}
+
+.payment-item span {
+    font-weight: bold;
+    margin: 30px;
+    height: auto;
+}
+
+
+/*--- FIRMA DEL PROYECTO ---*/
+
+.LEGALESyFIRMA{
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.TyC{
+    width: auto;
+    text-align: left;
+    font-size: 27px;
+    opacity: 50%;
+    padding: 20px;
+    justify-content: center;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tyc-img{
+    width: 35px;
+    height: auto;
+    opacity: 60%;
+}
+
+.tyc-link{
+    width: auto;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-left: 40px ;
+    margin-top: -28px;
+}
+
+.impulsor{
+    font-size: 35px;
+    padding-top: 50px;
+    opacity: 50%;
+    display: inline-block;
+}
+
+.impulsor:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.LULUPRINT{
+    width: auto;
+    text-align: center;
+    font-size: 27px;
+    opacity: 50%;
+    justify-content:center;
+    padding: 20px;
+    text-shadow: 2px 1px 1px #000;
+}
+
+.firma{
+    color: white;
+    font-size: 22px;
+    font-weight: lighter;
+    width: auto;
+    text-shadow: 2px 1px 1px #000;
+}
+
+.WebDesign{
+    width: auto;
+    font-size: 16px;   
+    margin-left: 100px;
+    margin-top: -5px;
+}
+
+
+/*===================================================================================*/
+/* ----------------------------------- ESTILOS TYC --------------------------------- */
+/*===================================================================================*/
+
+.tyc-fondo{
+    background-color: white;
+}
+.tyc-header{
+    background-color: white;
+    
+}
+
+.tyc-main{
+    flex-direction: column;
+    align-items: center;
+}
+
+.tyc-div{
+    height: min-content;
+}
+
+.tyc-div p{
+color: black;
+text-shadow: none;
+margin: 10px;
+text-align: justify;
+}
+
+.tyc-div h2{
+    color: black;
+    text-shadow: none;
+    font-size: larger;
+    display: block;
+    
+} 
+
+.tyc-div h3{
+    color: black;
+    text-shadow: none;
+    font-size: large;
+    text-align: left;
+}
+
+.tyc-footer{
+    background-color: grey;
+    color: black;
+}
+
+.tyc-button{
+    padding: 5px;
+    margin: 20px;
+
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* --------------- MEDIA QUERY PARA DISPOSITIVOS MÓVILES ------------------ */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (max-width: 768px) {
+
+    
+    .nav-part {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar el menú hamburguesa en dispoditivos móviles */
+    }
+
+    .nav-part.active {
+        display: flex; /* Mostrar el menú al hacer clic */
+    }
+
+    .nav-link {
+        padding: 15px;
+        border-bottom: 1px solid rgb(87, 87, 87);
+        font-size: medium;
+    }
+
+    .carrito-ico{
+        width: 25px;
+        height: 25px;
+    }
+
+    .logo {
+        position: relative;
+        transform: none;
+        left: 0px;
+        padding: 15px;
+        display: block;
+    }
+
+    .container{
+        margin-left: 50px;
+    }
+
+    .element{
+        margin: 45px;
+
+    }
+
+    .pos-bebidas{
+        position: absolute;
+        left: 120px;
+        top: 16px;
+    }
+    
+    .pos-instantaneas{
+        position: absolute;
+        left: 120px;
+        top: 255px;
+    }
+    
+    .pos-postres{
+        position: absolute;
+        left: 120px;
+        top: 495px;
+    }
+    
+    .pos-especias{
+        position: absolute;
+        left: 120px;
+        top: 735px;
+    }
+    
+    .pos-snacks{
+        position: absolute;
+        left: 120px;
+        top: 975px;
+    }
+
+    .text {
+        flex-direction: column;
+        position: relative;
+        display: flex;
+    }
+
+    /*------------------------ RESPONSIVIDAD FOOTER GENERAL -----------------------*/
+    .wpp, .ig, .mail{
+        width: 30px;
+    }
+
+    .TyC{
+        width: 100%;
+        height: auto;
+        text-align: left;
+        font-size: 16px;
+        opacity: 50%;
+        padding: 20px;
+        align-content: center;
+        flex-direction: column;
+        display: flex;
+        margin-left: 25px;
+    }
+    
+    .tyc-link{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+
+    .tyc-img{
+        width: 35px;
+        height: auto;
+        opacity: 60%;
+    }
+    
+    .LULUPRINT{
+        width: 100%;
+        text-align: end;
+        font-size: 20px;
+        opacity: 50%;
+        margin-right: 25px;
+    }
+    
+    .WebDesign{
+        text-align: end;
+        position: relative;
+        right: 3px;
+        top: -2px;
+    }
+
+
+    /*------------------------ RESPONSIVIDAD DE CONTACTOS -----------------------*/
+    .contacto-links{
+        width: auto;
+    }
+    
+    h3{
+        font-size: 20px;
+    }
+    
+    .punto-de-encuentro, .ventas, .siguenos, .suscribete{
+        margin-top: 16px;
+    }
+    
+    img{
+        width: 25px;
+        height: 25px;
+        margin: 15px;
+    }
+    
+    h2{
+        font-size: 16px;
+    }
+
+    p{
+        margin-left: 55px;
+        margin-top: -10px;
+    }
+
+    .Gmap{
+        flex: none; 
+        width: 100%; 
+        padding: 10px;
+        width: 100%; 
+        height: auto;
+    }
+
+    /*------------------------ TARJETAS RESPONSIVAS -----------------------*/
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-img {
+        width: max-content;
+        height: min-content;
+        object-fit: cover;
+    }
+    
+    .product-info {
+        padding: 16px;
+        text-align: center;
+        color: black;
+        font-weight: 600;
+    }
+
+    .product-title {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .product-description{
+        padding: 20px;
+    }
+
+    .product-price {
+        font-size: 1em;
+    }
+
+    .product-actions img {
+        width: 24px;
+        height: 24px;
+    }  
+    
+}
+

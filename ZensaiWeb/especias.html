@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>ADEREZOS Y CONDIMENTOS - 前菜 ZENSAI - Asian Food</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="stylesheets.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> <!--LINK BOOTSTRAP-->
+    </head>
+    <body class="fondo-especias">
+        <div class="PageContainer">    
+            <header>
+                    <!-- Barra de Navegación -->
+                    <nav class="navbar">
+
+                        <div class="nav-container">
+                            <!-- Logo Circular -->
+                        <div class="logo">
+                            <a href="index.html"><img src="ZensaiLogoWeb@300x.png" alt="Zensai-Logo"></a>
+                        </div>
+
+                            <!-- Parte 1: Inicio, Contacto, Nosotros -->
+                            <div class="nav-part web-info">
+                                <a href="index.html" class="nav-link" target="_blank">Inicio</a>
+                                <a href="contacto.html" class="nav-link" target="_blank">Contacto</a>
+                                <a href="nosotros.html" class="nav-link" target="_blank">Nosotros</a>
+                            </div>
+
+                        <!-- Parte 2: Login, Sign Up, Carrito -->
+                        <div class="nav-part registro">
+                            <a href="login.html" class="nav-link" target="_blank">Login</a>
+                            <a href="register.html" class="nav-link" target="_blank">Sign Up</a>
+                            <a href="carrito.html" class="nav-link" target="_blank"><img src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FFFFFF" alt="Carrito" class="carrito-ico"></a>
+                        </div>
+
+                        <!-- Menú hamburguesa para móviles -->
+                        <div class="menu-toggle">&#9776;</div>
+                    </nav>
+            </header>
+                
+            <main class="main-especias">
+                    <h2 class="especias-title">ADEREZOS Y CONDIMENTOS</h2>
+                    <h2 class="sub-title">
+                        <i>Éstos son los mejores productos que tenemos para ti.</i>
+                        <hr class="especias-hr">
+                    </h2>
+                    <br><br>
+
+                    <!-- CARRUSEL CON TARJETAS DE ADEREZOS -->
+                    
+                    <h3 class="h3-especias">ADEREZOS</h3>
+                    <div id="slider-aderezos" class="slider-container">
+                        <div class="slide">
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-especias" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRhaZyddba8-xm8JHTE7RhENAJGTH0_SneAQI92J-cRIWrsIYARnGpsytr_toySNfxI-UQ-rHu2aNb2i-bQGAflRvLfyiTu&usqp=CAY" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">LEE KUM LEE PANDA BRAND OYSTER FLAVORED SAUCE <br> SALSA DE OSTRAS (907gr.)</h3>
+                                    <p class="product-description">Famosa por su calidad y sabor excepcionales, es un ingrediente indispensable en la cocina asiática. 
+                                        Esta salsa es perfecta para dar un toque sabroso a tus platos favoritos.  Elaborada con ostras seleccionadas, 
+                                        ofrece un sabor profundo y salado que realza el gusto de cualquier preparación. Muy versátil para preparar salteados, 
+                                        salsas y marinados, platos al vapor.</p>
+                                    <p class="product-price">$15,000</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="1-1" data-name="PANDA-OYSTER-SAUCE" data-price="15,000" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas.</i></p>
+                                </div>
+                            </div>  
+                            
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-especias" src="https://sueñogourmet.com.ar/wp-content/uploads/2022/08/RT-154-300x700.png" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title"> FISH SAUCE THAILAND <br> SALSA DE PESCADO TAILANDESA (1L.)</h3>
+                                    <p class="product-description"> Es un aderezo esencial en la cocina tailandesa, conocido por 
+                                        su sabor profundo y salado que aporta un auténtico toque del sudeste asiático a tus platillos. 
+                                        Esta salsa se elabora con pescado fermentado de alta calidad, proporcionando un perfil de sabor único y complejo.
+                                        Perfecta para cualquier amante de la cocina que quiera explorar nuevos sabores y sorprender a sus comensales.
+                                    </p>
+                                    <p class="product-price">$15,500</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">-->
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> 
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="2-1" data-name="FISH-SAUCE-THAI" data-price="15,500" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-especias" src="https://www.globalsempio.com/wp-content/uploads/2021/06/Gochujang-Lemon-With-Shadow.png" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">GOCGUJANG<br> PASTA DE AJÍ COREANO  (1kg)</h3>
+                                    <p class="product-description">Aderezo tradicional que se utiliza en la cocina de Corea
+                                        para añadir un sabor picante y profundo a una variedad de platillos. 
+                                        Con su textura espesa y su color rojo vibrante, esta pasta es un ingrediente 
+                                        esencial que no puede faltar en tu despensa. combina el picante del ají 
+                                        con un toque de dulzura, creando un perfil de sabor único que complementa 
+                                        perfectamente numerosos platos, como sopas, guisos, marinados y salsas.
+                                    </p>
+                                    <p class="product-price">$35,000</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="3-1" data-name="GOCGUJANG-PASTA-DE-AJI" data-price="35,000" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-especias" src="https://acdn.mitiendanube.com/stores/186/318/products/pasted-20210916-124137_clipped_rev_11-c0731ad4d1818c4cdc16318070046015-640-0.png" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">LEE KUM KEE HOISIN SAUCE<br> SALSA HOISIN (397gr.)</h3>
+                                    <p class="product-description">Es similar a la salsa agridulce elaborada con soja fermentada, 
+                                        pero se le ha añadido como ingredientes el ajo, vinagre y chile. Se puede decir que 
+                                        su sabor es más suave que la salsa agridulce. <br>
+                                        <strong>Ingredientes:</strong> agua, azúcar, soja y vinagre destilado, sal, 
+                                        harina de trigo, ajo y chiles así como diversos conservantes y colorantes. <br>                                        
+                                        Tradicionalmente la salsa Hoisin se elabora con batata. [Origen: China]</p>
+                                    <p class="product-price">$13,000</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="4-1" data-name="HOISIN-SAUCE" data-price="13,000" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!---------------------- BOTONES DEL CARRUSEL ------------------------>
+                        <div class="prev-aderezos" onclick="moveSlide('slider-aderezos', -1)">&#10094;</div>
+                        <div class="next-aderezos" onclick="moveSlide('slider-aderezos', 1)">&#10095;</div>
+                    </div>
+                    <br>
+                    <!--====================================================================================-->
+                    <br>
+                    
+                    <!-- CARRUSEL CON TARJETAS DE CONDIMENTOS Y ESPECIAS -->
+                    
+                    <h3 class="h3-especias">CONDIMENTOS Y ESPECIAS</h3>
+                    <div id="slider-condimentos" class="slider-container">
+                        <div class="slide">
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-condimentos" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRUue5-IVGEKc_Fb-goHe1Lsp_yqU9OxPhqL_k46LglJvCK0ZJDTVmDkM7fozs0OEa_IzGW0JJ8gxInKN7XmbNp7osKeexS&usqp=CAY" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">WANG SHOW YI 13 SEASONING PORDER MIX<br>SASONADOR EN POLVO DESHIDRATADO 13 ESPECIAS (40gr.)</h3>
+                                    <p class="product-description"> Esta mezcla en polvo está hecha de trece especias diferentes, incluyendo anís estrellado, 
+                                        pimienta de Sichuan, pimienta negra, canela, cáscara de naranja, jengibre, etc. El polvo se puede usar en mezcla de encurtidos, 
+                                        platos fríos, estofados, albóndigas, etc. Es un ingrediente indispensable para la cocina China. 
+                                    </p>
+                                    <p class="product-price">$4,000</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="1-2" data-name="WANG-SHOW-YI-13MIX" data-price="4,000" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>  
+                            
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-condimentos" src="https://migranero.com/cdn/shop/files/6BF90750-EB7D-4ED5-AF93-8299C72B8EC2.jpg?v=1699312794" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">FLOR DE MACIS<br> CONDIMENTO DE CÁSCARA DE NUEZ MOSCADA (500gr)</h3>
+                                    <p class="product-description">La flor de macis es un condimento que se recomienda para la preparación 
+                                        de platillos salados como: papas, la salsa blanca, verduras, carnes, entre otros; reservando así el sabor más 
+                                        suave de la nuez moscada para la repostería. Generalmente, se usa para modificar la textura y 
+                                        el sabor de diversos alimentos. Esto es debido a su naturaleza carnosa y sabor similar al de la 
+                                        nuez moscada, pero más dulce.</p>
+                                    <p class="product-price">$5,500</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="2-2" data-name="FLOR-DE-MACIS" data-price="5,500" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000" alt="Carrito">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-condimentos" src="https://todosushi.com.ar/wp-content/uploads/2020/07/wasabi-polvo.png" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">WASABI POWDER<br> WASABI EN POLVO (1000gr.)</h3>
+                                    <p class="product-description"> El Wasabi en Polvo es un ingrediente esencial 
+                                        para los amantes de la cocina japonesa y la gastronomía en general. Presentado 
+                                        en un práctico empaque de 1 kg, este wasabi en polvo es ideal para aquellos que 
+                                        buscan darle un toque picante y auténtico a sus platos. <br>
+                                        <strong>Beneficios:</strong>
+                                        <ul>
+                                            <li><strong>Natural y Saludable:</strong> Sin aditivos ni conservantes, 
+                                                este wasabi en polvo es una opción más saludable comparado con las salsas comerciales.</li>
+                                            <li><strong>Fácil de Usar:</strong> Simplemente mezcla con agua para disfrutar de su frescura en segundos.</li>
+                                            <li><strong>Ideal para Cocineros:</strong> Perfecto para chefs profesionales y aficionados que desean experimentar con sabores auténticos.</li>
+                                        </ul>
+                                    </p>
+                                    <p class="product-price">$16,500</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible"> -->
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK">
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="3-2" data-name="WASABI-EN-POLVO" data-price="16,500" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                            <div class="card"> <!----- TARJETA ----->
+                                <!-- Imagen del producto -->
+                                <img class="img-condimentos" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT_aSPqpOID60puOQWp9GF34TQgiiFaxgskmDj0pbxH9_UHn2O59Zp8n278KAT-Q5ltXzBG7eqIVwcWlnz6dXKykbYavOvKz4xjIFGiMtxUd73JayJR40OWNYM&usqp=CAE" alt="Producto">
+                            
+                                <!-- Descripción del producto -->
+                                <div class="product-info">
+                                    <h3 class="product-title">TANDOORI MASALA <br> COMBO DE ESPECIAS PREMIUM SELECCIONADAS DE LA INDIA (100gr.)</h3>
+                                    <p class="product-description">El Tandoori Masala es una mezcla de especias tradicional de la cocina India, 
+                                        diseñada para realzar el sabor de tus platos con un toque auténtico y exótico. Este producto es ideal 
+                                        para marinar carnes, pescados y verduras, ofreciendo una explosión de sabor y aroma en cada bocado. <br>
+                                        Elaborado con una cuidadosa selección de especias premium, incluyendo: cúrcuma, pimentón, comino, cilantro, jengibre y ajo.
+                                        Ideal para preparar marinados, asados y curry. <br>
+                                        <strong>Fácil de Usar:</strong>  Simplemente mezcla con yogur o aceite para crear una marinada sabrosa. <br>
+                                        <strong>Sin Aditivos:</strong>  Hecho con ingredientes naturales, sin conservantes ni colorantes artificiales.
+                                    </p>
+                                    <p class="product-price">$4,500</p>
+                            
+                                    <!-- Iconos de acción -->
+                                    <div class="product-actions">
+                                        <img class="like-icon" src="https://img.icons8.com/?size=100&id=87&format=png&color=FF0000" alt="Like" onclick="toggleLike(this)">
+                                        
+                                        <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=11658&format=png&color=94D82D" alt="Disponible">
+                                        <!-- <img class="avaliable-icon" src="https://img.icons8.com/?size=100&id=3062&format=png&color=FF0000" alt="SIN STOCK"> -->
+                                        
+                                        <img  alt="Añadir al Carrito" class="add-to-cart" data-id="4-2" data-name="TANDOORI-MASALA" data-price="4,500" src="https://img.icons8.com/?size=100&id=mlzugiBNw6GO&format=png&color=FF0000">
+                                    </div>
+                            
+                                    <!-- Nota extra -->
+                                    <p class="extra-note"><i>Imágenes sólo ilustrativas; los envases pueden variar según promociones de las respectivas marcas</i></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!---------------------- BOTONES DEL CARRUSEL ------------------------>
+                        <div class="prev-condimentos" onclick="moveSlide('slider-condimentos', -1)">&#10094;</div>
+                        <div class="next-condimentos" onclick="moveSlide('slider-condimentos', 1)">&#10095;</div>
+                    </div>
+            </main>
+                
+                <footer>
+                    <div class="rrss-icons">
+                        <a href="https://wa.me/543704298140" target="_blank">
+                            <img class="wpp" src="https://img.icons8.com/?size=100&id=16712&format=png&color=FFFFFF" alt="WhatsApp" />
+                        </a>
+                        
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img class="ig" src="https://img.icons8.com/?size=100&id=32292&format=png&color=FFFFFF" alt="Instagram" />
+                        </a>
+                        
+                        <a href="mailto:luluprintok@gmail.com" target="_blank">
+                            <img class="mail" src="https://img.icons8.com/?size=100&id=1669&format=png&color=FFFFFF" alt="Email: luluprintok@gmail.com" />
+                        </a>
+                        
+                    </div>
+
+                    <div class="impulsor ir-arriba">^</div>
+
+                    <div class="payment-methods">
+                        <div class="payment-item">
+                            <i class="fas fa-money-check-alt" style="color: #00b3ff;"></i>
+                            <span>Mercado Pago</span>
+                        </div>
+                        <div class="payment-item">
+                            <i class="fas fa-credit-card" style="color: #0066ff;"></i>
+                            <span>Ualá</span>
+                        </div>
+                        <div class="payment-item">
+                            <i class="fab fa-paypal" style="color: rgb(235, 227, 227);"></i>
+                            <span>PayPal</span>
+                        </div>
+                    </div>
+                                        
+                    <div class="LEGALESyFIRMA">
+                        <div class="TyC">
+                            <img class="tyc-img" src="https://img.icons8.com/?size=100&id=6552&format=png&color=FFFFFF" alt="Términos y Condiciones" target="_blank">
+                            <a class="tyc-link" href="tyc.html" target="_blank">T&C</a>
+                        </div>
+                        <div class="LULUPRINT">
+                            <p class="firma">&copy Lulú Print</p>
+                            <p class="WebDesign">WebDesign</p>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+
+            <script src="scripts.js"></script>
+            <script src="https://code.jquery.com/jquery-latest.js"></script>
+            <script src="pageup.js"></script>
+            <script id="CARRUSEL">
+                    let currentSlideIndex = {
+                        "slider-aderezos": 0,
+                        "slider-condimentos": 0
+                    };
+
+                    function moveSlide(sliderId, step) {
+                        const slider = document.getElementById(sliderId);
+                        const slides = slider.querySelectorAll('.card');
+                        const totalSlides = slides.length;
+
+                        // Actualiza el índice de la diapositiva
+                        currentSlideIndex[sliderId] += step;
+
+                        // Reinicia el índice si es necesario
+                        if (currentSlideIndex[sliderId] < 0) {
+                            currentSlideIndex[sliderId] = totalSlides - 1;
+                        } else if (currentSlideIndex[sliderId] >= totalSlides) {
+                            currentSlideIndex[sliderId] = 0;
+                        }
+
+                        // Cambia la posición de la diapositiva
+                        const slideWidth = slides[0].clientWidth;
+                        const offset = -currentSlideIndex[sliderId] * slideWidth;
+                        slider.querySelector('.slide').style.transform = `translateX(${offset}px)`;
+                    }
+
+            </script>
+            <script id="AGREGAR-AL-CARRITO">
+                document.querySelectorAll('.add-to-cart').forEach(button => {
+                    button.addEventListener('click', () => {
+                        // Obtener datos del producto desde los atributos `data-`
+                        const id = button.getAttribute('data-id');
+                        const name = button.getAttribute('data-name');
+                        const price = button.getAttribute('data-price');
+                
+                        // Crear un objeto de producto
+                        const product = { id, name, price };
+                
+                        // Obtener el carrito actual del localStorage o inicializar uno vacío
+                        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                
+                        // Añadir el producto al carrito
+                        cart.push(product);
+                
+                        // Guardar el carrito actualizado en localStorage
+                        localStorage.setItem('cart', JSON.stringify(cart));
+                
+                        alert(`${name} añadido al carrito`);
+                    });
+                });
+            </script>
+            
+            
+            <!-- SCRIPTS JS DE BOOTSTRAP y POPPER desde CDN {Content Delivery Network (Red de Entrega de Contenidos)} -->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> <!--Popper administra los elementos Bootstrap para fijar su posición-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+
+    </body>
+        
+</html>
